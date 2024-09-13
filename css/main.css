@@ -1,0 +1,551 @@
+/* General reset and basic styles */
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+    height: 100%;
+    width: 100%;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+/* Container for the fixed background video */
+.video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.video-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-sizing: border-box;
+}
+
+nav .logo {
+    display: flex;
+    align-items: center;
+}
+
+nav .logo a {
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+nav .logo img {
+    height: 50px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+nav .nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* Navigation Buttons */
+nav .nav-links button {
+    background-color: orange;
+    color: black;
+    border: none;
+    padding: 10px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    white-space: nowrap;
+    text-align: center;
+    border-radius: 25px;
+}
+
+nav .nav-links button:hover {
+    background-color: lightgray;
+    color: red;
+}
+
+/* CTA Button */
+nav .cta {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+nav .cta button {
+    background-color: orange;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+nav .cta button:hover {
+    background-color: lightgray;
+    color: red;
+}
+
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 20px;
+    }
+
+    nav .logo {
+        margin-bottom: 10px;
+        /* Ensure logo has spacing in mobile view */
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav .cta {
+        margin: 20px 0 0 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav .nav-links li {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    nav .nav-links li a {
+        width: 100%;
+        display: block;
+        padding: 10px 0;
+        border-radius: 0;
+        /* Remove rounded corners on mobile */
+    }
+
+    .hero .hero-text h1 {
+        font-size: 36px;
+    }
+
+    .hero .hero-text p {
+        font-size: 18px;
+    }
+
+    .hero .hero-text .btn {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+
+    section {
+        padding-top: 150px;
+        /* Adjust based on the height of your nav and header */
+    }
+
+    .team-member {
+        width: 100%;
+        margin: 20px 0;
+    }
+}
+
+/* Hero section styles */
+.hero {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    z-index: 1;
+}
+
+.hero .hero-text {
+    position: relative;
+    z-index: 2;
+}
+
+.hero .hero-text h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.hero .hero-text p {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.hero .hero-text .btn {
+    background-color: orange;
+    color: black;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 18px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.hero .hero-text .btn:hover {
+    background-color: lightgray;
+    color: red;
+}
+
+/* Section styles */
+section {
+    padding-top: 200px;
+    margin-top: -50px;
+    background-color: rgba(255, 255, 255, 0.9);
+    text-align: center;
+    border-radius: 15px;
+    max-width: 600px;
+    margin: 100px auto;
+    z-index: 2;
+    position: relative;
+}
+
+.who-we-are {
+    padding-top: 200px;
+    margin-top: -100px;
+    background-color: rgba(255, 255, 255, 0.9);
+    text-align: center;
+    border-radius: 15px;
+    max-width: 600px;
+    margin: 100px auto;
+    z-index: 2;
+    position: relative;
+}
+
+.rbutton {
+    background-color: orange;
+    color: black;
+    border: none;
+    padding: 15px;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    margin-top: 10px;
+    /* Adds spacing between buttons */
+    display: block;
+    width: 100%;
+}
+
+.rbutton:hover {
+    background-color: gray;
+    color: red;
+}
+
+
+
+footer {
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    z-index: 2;
+    position: relative;
+}
+
+footer .footer-links {
+    margin-bottom: 20px;
+}
+
+footer .nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+footer .nav-links button {
+    background-color: orange;
+    color: black;
+    border: none;
+    padding: 10px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    white-space: nowrap;
+    text-align: center;
+    border-radius: 25px;
+}
+
+footer .nav-links button:hover {
+    background-color: light gray;
+    color: #fff;
+}
+
+footer .social-media {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+}
+
+footer .legal {
+    font-size: 14px;
+}
+
+footer .legal a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 5px;
+    transition: color 0.3s;
+}
+
+footer .legal a:hover {
+    color: lightgray;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    footer .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer .nav-links button {
+        width: 100%;
+        max-width: 200px;
+    }
+}
+
+.lead-form {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 100px 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+/* Form container */
+.form-container {
+    padding-top: 100px;
+    margin-top: 10px;
+    background-color: gray;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-container h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.form-container p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.form-container form ::placeholder {
+    color: black;
+}
+
+/* Input fields and button styling */
+.form-container form input,
+.form-container form button {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.form-container form button {
+    background-color: orange;
+    color: black;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.form-container form button:hover {
+    background-color: gray;
+    color: red;
+}
+
+/* Testimonials Section */
+.testimonials {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 100px 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.testimonials h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.testimonial {
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.testimonial-img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 2px solid #f39c12;
+}
+
+.testimonial p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 10px;
+    padding: 0 20px;
+}
+
+.testimonial-author {
+    font-style: italic;
+    font-size: 16px;
+    color: #777;
+}
+
+/* General styling for the section */
+.team {
+    padding: 100px 10px;
+    text-align: center;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for each team member */
+.team-member {
+    display: inline-block;
+    width: 250px;
+    margin: 20px;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.team-member-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.team-member p:first-of-type {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0 5px 0;
+    color: #333;
+}
+
+.team-member p:last-of-type {
+    font-size: 16px;
+    color: #666;
+    margin: 0;
+}
+
+/* Styling for the Thank You section */
+.thank-you {
+    padding: 200px 20px;
+    text-align: center;
+    background-color: #f39c12;
+    color: black;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 60px auto;
+}
+
+.thank-you h2 {
+    color: black;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.thank-you p {
+    color: black;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.referral p {
+    color: white;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.referral {
+    background-color: black;
+    color: #f39c12;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.referral .btn {
+    background-color: gray;
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 16px;
+    transition: background-color 0.3s, color 0.3s;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.referral .btn:hover {
+    background-color: blue;
+    color: red;
+}
