@@ -1,3 +1,5 @@
+# Outline for Funnel Page
+
 ## Landing Page
 
 • Header:
@@ -30,7 +32,7 @@
 • Social Media Links: Icons linking to social profiles.
 • Legal Links: Terms of Service, Privacy Policy.
 
-## Additional Considerations:
+## Additional Considerations
 
 • Responsive Design:
 • Ensure the design adapts seamlessly to mobile, tablet, and desktop devices.
@@ -41,48 +43,5 @@
 
 ## Links
 
-Placeholder(TBD)
+Placeholder
 • Downloadable Resources: “Download Our Solar Guide” or “See What to Expect During Installation”
-
-### Credit Repair
-<https://700creditrepair.mykajabi.com/700-credit-repair-customer-enrollment-page-1-Daryl-Hallwas>
-
-These are reference only not part of funnel
-### Example (client web site)
-<https://reasolarsolutions.com/>
-
-### Example (contact page)
-<https://energyonerenewables.com/contact/>
-
-### Example
-<https://solisenergyservices.com/>
-
-## Optional Items:
-### Consultation Booking Section (instead of just contact)
-• Header:
-• Consultation Scheduling:
-• Calendar Integration:
-• Users can pick a date and time for a free consultation.
-• Confirmation of Details:
-• Recap of user inputs and solar plan.
-• CTA Button:
-• “Confirm Appointment”
-
-• Provide this materials
-• What to Expect: Brief overview of what happens next.
-• Downloadable Resources: “Download Our Solar Guide” or “See What to Expect During Installation”
-
-## video
-
-<https://www.youtube.com/watch?v=nt4eUBPRH0I>
-<https://www.youtube.com/watch?v=IEkeayw02mM>
-
-<https://youtu.be/nt4eUBPRH0I?si=kmFQk74AiffmqTmb>
-<https://youtu.be/IEkeayw02mM?si=jvR5a7rIFY-giPsJ>
-
-## Examples Sites
-<https://www.cyberoptik.net/blog/best-solar-website-designs/>
-
-
-
-Configruation for AWS S3 Bucket
